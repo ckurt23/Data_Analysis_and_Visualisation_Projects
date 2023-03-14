@@ -1,0 +1,8 @@
+Create Database ig_clone manually in Postgresql
+
+--creating user table
+CREATE TABLE users(
+	id INT GENERATED ALWAYS AS IDENTITY UNIQUE PRIMARY KEY,
+	username VARCHAR(255) NOT NULL,
+	created_at TIMESTAMP DEFAULT NOW()
+);
