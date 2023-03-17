@@ -1,4 +1,4 @@
---Create Database ig_clone in Postgresql 
+--Create Database ig_clone in Postgresql
 
 --creating user table
 CREATE TABLE users(
