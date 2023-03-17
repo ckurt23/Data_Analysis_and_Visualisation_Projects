@@ -1,5 +1,5 @@
 --Create Database ig_clone in Postgresql
-
+CREATE test
 --creating user table
 CREATE TABLE users(
 	id INT GENERATED ALWAYS AS IDENTITY UNIQUE PRIMARY KEY,
