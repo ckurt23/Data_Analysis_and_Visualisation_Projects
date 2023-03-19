@@ -5,8 +5,8 @@ FROM users
 ORDER BY oldest_user_list DESC
 LIMIT 5;
 
-/*What day of the week do most users register on?
-We need to figure out when to schedule an ad campgain*/
+--What day of the week do most users register on?
+--We need to figure out when to schedule an ad campgain
 
 SELECT to_char(created_at, 'Day') AS day_of_week, COUNT(*) AS total_count
 FROM users
