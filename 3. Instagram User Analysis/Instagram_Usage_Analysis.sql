@@ -16,3 +16,16 @@ ORDER BY total_count DESC;
 /*We want to target our inactive users with an email campaign.
 Find the users who have never posted a photo*/
 
+SELECT u.id,
+       u.username,
+       COUNT(p.user_id) AS ttl_photo
+FROM users AS u
+LEFT JOIN photos AS p
+ON u.id = p.user_id
+GROUP BY u.id
+HAVING COUNT(p.user_id) = 0
+ORDER BY u.id;
+
+/*We're running a new contest to see who can get the most likes on a single photo.
+WHO WON??!!*/
+
