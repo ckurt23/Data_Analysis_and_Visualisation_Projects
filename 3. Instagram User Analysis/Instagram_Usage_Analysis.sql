@@ -29,3 +29,13 @@ ORDER BY u.id;
 /*We're running a new contest to see who can get the most likes on a single photo.
 WHO WON??!!*/
 
+SELECT username, photo_id, total_like
+FROM (
+       SELECT photo_id, COUNT(*) AS total_like
+       FROM likes AS l
+       LEFT JOIN photos AS p ON p.id = l.photo_id
+       GROUP BY photo_id
+       ORDER BY total_like DESC
+       LIMIT 1) AS subtable
+LEFT JOIN photos AS p ON p.id = subtable.photo_id
+LEFT JOIN users AS u ON p.user_id = u.id;
