@@ -86,3 +86,14 @@ WHERE users.id NOT IN (SELECT DISTINCT user_id FROM comments);
 Are we overrun with bots and celebrity accounts?
 Find the percentage of our users who have either never commented on a photo or have commented on every photo*/
 
+SELECT ROUND((COUNT(*)::decimal / (SELECT COUNT(*) FROM users)::decimal),2)*100
+FROM (
+	SELECT user_id
+	FROM comments			       -- commented on every photo
+	GROUP BY user_id
+	HAVING COUNT(*) = (SELECT COUNT(*) FROM photos)
+	UNION					-- union
+	SELECT id AS user_id
+	FROM users				-- never commented on a photo
+	WHERE id NOT IN (SELECT DISTINCT user_id FROM comments)
+) AS subtable;
