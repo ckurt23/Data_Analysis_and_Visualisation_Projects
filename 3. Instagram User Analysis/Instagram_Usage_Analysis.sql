@@ -59,3 +59,21 @@ ORDER BY total_photo DESC;
 /*A brand wants to know which hashtags to use in a post
 What are the top 5 most commonly used hashtags?*/
 
+SELECT tag_name, COUNT(*) AS ttl
+FROM photo_tags AS p
+LEFT JOIN tags AS t ON t.id = p.tag_id
+GROUP BY tag_name
+ORDER BY ttl DESC
+LIMIT 5;
+
+/*We have a small problem with bots on our site...
+Find users who have liked every single photo on the site*/
+
+SELECT username, COUNT(*) AS like_per_user
+FROM likes AS l
+LEFT JOIN users AS u ON u.id = l.user_id
+GROUP BY username
+HAVING COUNT(*) = (SELECT COUNT(*) FROM photos);
+
+/*We also have a problem with celebrities
+Find users who have never commented on a photo*/
