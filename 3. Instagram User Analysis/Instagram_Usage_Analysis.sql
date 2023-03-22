@@ -56,5 +56,6 @@ LEFT JOIN users AS u ON u.id = p.user_id
 GROUP BY username
 ORDER BY total_photo DESC;
 
-/*Total Posts by users (longer versionof SELECT COUNT(*)FROM photos) */
+/*A brand wants to know which hashtags to use in a post
+What are the top 5 most commonly used hashtags?*/
 
