@@ -77,3 +77,12 @@ HAVING COUNT(*) = (SELECT COUNT(*) FROM photos);
 
 /*We also have a problem with celebrities
 Find users who have never commented on a photo*/
+
+SELECT *
+FROM users
+WHERE users.id NOT IN (SELECT DISTINCT user_id FROM comments);
+
+/*Mega Challenges
+Are we overrun with bots and celebrity accounts?
+Find the percentage of our users who have either never commented on a photo or have commented on every photo*/
+
