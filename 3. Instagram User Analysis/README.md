@@ -1,4 +1,4 @@
-Queries written in Postgre SQL.
+Written in Postgre SQL.
 
 Raw data and challenge questions taken from https://github.com/ptyadana
 
