@@ -49,3 +49,12 @@ FROM users AS u
 LEFT JOIN photos AS p ON p.user_id = u.id;
 
 /*user ranking by postings higher to lower*/
+
+SELECT username, COUNT(*) AS total_photo
+FROM photos AS p
+LEFT JOIN users AS u ON u.id = p.user_id
+GROUP BY username
+ORDER BY total_photo DESC;
+
+/*Total Posts by users (longer versionof SELECT COUNT(*)FROM photos) */
+
