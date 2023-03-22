@@ -39,3 +39,13 @@ FROM (
        LIMIT 1) AS subtable
 LEFT JOIN photos AS p ON p.id = subtable.photo_id
 LEFT JOIN users AS u ON p.user_id = u.id;
+
+/*Our Investors want to know...
+How many times does the average user post?*/
+/*total number of photos/total number of users*/
+
+SELECT ROUND(COUNT(DISTINCT p.id)::decimal/COUNT(DISTINCT u.id)::decimal, 2) AS post_per_person
+FROM users AS u
+LEFT JOIN photos AS p ON p.user_id = u.id;
+
+/*user ranking by postings higher to lower*/
