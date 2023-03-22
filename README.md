@@ -13,3 +13,15 @@ It is used to perform data analysis for real world business related questions an
 + Finding out the loyal users to reward them
 + Deciding the best possible day of week to launch a campaign
 + Searching inactive users and contact information etc.
+
+## [Golden Age of video Games](2.%20Golden%20Age%20of%20Video%20Games)
+Completed as final project for Datacamp Data Analytics in SQL course.
++ Looking for sales results
++ Compare to critics and player comments & ratings
+
+
+## [World Population Analysis](1.%20World%20Population%20Data%20Analyse)
+First project
++ Analysis for population growth from 1970 to 2022 all across the world, data taken from Kaggle.
++ Analysed compared to period of times, continents via Postgre SQL
++ Visualised through Tableau, which can be reached from relevant folder readme.
