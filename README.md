@@ -6,6 +6,13 @@ Built with Postgre SQL language and with pgAdmin 4 tool.
 
 # Projects and Challenges
 
+## [Customer Purchase Analysis](4.%20Customer%20Analysis)
+
+Used source cvs file with almost 300k row, cleaned and analysed via Tableau Desktop for
++ Revenue per state, age, month etc.
++ Revenue per Gender per Category
++ Revenue/Discount percentage correlation
+
 ## [Instagram User Analysis](3.%20Instagram%20User%20Analysis)
 
 Postgre SQL project of Instagram database. 
