@@ -1,4 +1,4 @@
--- Amazon interview question
+-- Amazon interview question  Difficulty: HARD
 
 -- Monthly Percentage Difference
 
