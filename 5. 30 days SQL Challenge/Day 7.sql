@@ -1,3 +1,16 @@
+-- Google interview question, taken from StrataStrach    Difficulty: HARD
+/*
+Counting Instances in Text
+
+Find the number of times the words 'bull' and 'bear' occur in the contents.
+We're counting the number of times the words occur so words like 'bullish' should not be included in our count.
+Output the word 'bull' and 'bear' along with the corresponding number of occurrences.
+
+Table: google_file_store
+filename: VARCHAR
+contents: VARCHAR
+*/
+
 SELECT
     new_column,
     COUNT(*) total
