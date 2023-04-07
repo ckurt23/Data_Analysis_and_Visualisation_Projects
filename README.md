@@ -6,6 +6,12 @@ Built with Postgre SQL language and with pgAdmin 4 tool.
 
 # Projects and Challenges
 
+## [Disney+ Platform Analysis and Visualisation](6.%20Disney%2B%20Data%20Analysis)
+
+Used source cvs file with almost 1.5k row, cleaned and analysed via Tableau Desktop for
++ Distribution of total movies & TV shows per country, rating, genre etc.
++ Provides a useful filter option with TV shows & movies to see important details.
+
 ## [Customer Purchase Analysis](4.%20Customer%20Analysis)
 
 Used source cvs file with almost 300k row, cleaned and analysed via Tableau Desktop for
