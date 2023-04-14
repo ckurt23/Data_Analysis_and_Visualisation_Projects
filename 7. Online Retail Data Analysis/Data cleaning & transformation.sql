@@ -21,4 +21,16 @@ CREATE TABLE v2retail_sales AS
 SELECT *
 FROM retail_sales;
 
+					-- delete rows with empty cells
+DELETE FROM v2retail_sales
+WHERE
+	invoice is NULL OR
+	stock_code is NULL OR
+	description is NULL OR
+	quantity is NULL OR
+	invoice_date is NULL OR
+	price is NULL OR
+	customer_id is NULL OR
+	country is NULL;
+
 -- to be continued.
