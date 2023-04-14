@@ -57,7 +57,7 @@ UPDATE v2retail_sales
 SET cancelled_invoice =
 	CASE
 	WHEN invoice ILIKE 'c%' THEN 'X'
-	ELSE ' '
+	ELSE 'O'
 	END
 
 -- to be continued.
