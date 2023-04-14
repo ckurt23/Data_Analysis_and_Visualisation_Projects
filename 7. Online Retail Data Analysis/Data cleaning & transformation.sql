@@ -49,4 +49,15 @@ SET new_invoice_date = invoice_date::date
 UPDATE v2retail_sales
 SET new_invoice_time = invoice_date::time
 
+					-- Adding column for cancelled invoices
+ALTER TABLE v2retail_sales
+ADD COLUMN cancelled_invoice VARCHAR(1);
+
+UPDATE v2retail_sales
+SET cancelled_invoice =
+	CASE
+	WHEN invoice ILIKE 'c%' THEN 'X'
+	ELSE ' '
+	END
+
 -- to be continued.
