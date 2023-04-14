@@ -6,7 +6,7 @@ Built with Postgre SQL language and with pgAdmin 4 tool.
 
 # Projects and Challenges
 
-## [Online Retail Data Analysis & Vizualisation](7.%20Online%20Retail%20Data%20Analysis)
+## [Online Retail Data Analysis and Vizualisation](7.%20Online%20Retail%20Data%20Analysis)
 
 + We analyze a large dataset containing over 1 million rows of online retail transactions.
 + The data is sourced from the UK-based online retailer, and it covers transactions from 2009 to 2011.
