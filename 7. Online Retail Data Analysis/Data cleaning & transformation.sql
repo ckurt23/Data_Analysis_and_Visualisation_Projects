@@ -49,7 +49,7 @@ SET new_invoice_date = invoice_date::date
 UPDATE v2retail_sales
 SET new_invoice_time = invoice_date::time
 
-					-- Adding column for cancelled invoices
+					-- Adding column for cancelled invoices then decided to delete these rows.
 ALTER TABLE v2retail_sales
 ADD COLUMN cancelled_invoice VARCHAR(1);
 
@@ -59,5 +59,8 @@ SET cancelled_invoice =
 	WHEN invoice ILIKE 'c%' THEN 'X'
 	ELSE 'O'
 	END
+					-- 18k rows removed
+DELETE FROM v2retail_sales
+WHERE cancelled_invoice = 'X'
 
--- to be continued.
+--
