@@ -35,6 +35,18 @@ WHERE
 	country is NULL;
 	
 					-- adjust date & time
-a
+ALTER TABLE v2retail_sales
+ADD COLUMN
+new_invoice_date DATE
+
+ALTER TABLE v2retail_sales
+ADD COLUMN
+new_invoice_time TIME
+
+UPDATE v2retail_sales
+SET new_invoice_date = invoice_date::date
+
+UPDATE v2retail_sales
+SET new_invoice_time = invoice_date::time
 
 -- to be continued.
