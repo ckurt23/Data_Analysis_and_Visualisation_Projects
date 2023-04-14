@@ -16,4 +16,9 @@ CREATE TABLE public."retail_sales" (
 COPY public.retail_sales
 FROM 'C:\Users\90537\Desktop\online_retail_IIv2.csv' DELIMITER ';' CSV HEADER;
 
+					-- back up original data
+CREATE TABLE v2retail_sales AS
+SELECT *
+FROM retail_sales;
+
 -- to be continued.
