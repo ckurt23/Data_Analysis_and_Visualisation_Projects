@@ -6,6 +6,10 @@ Built with Postgre SQL language and with pgAdmin 4 tool.
 
 # Projects and Challenges
 
+## [Online Retail Data Analysis % Vizualisation from beginning](7.%20Online%20Retail%20Data%20Analysis)
+
+In this project, we analyze a large dataset containing over 1 million rows of online retail transactions. The data is sourced from the UK-based online retailer, and it covers transactions from 2009 to 2011. We start by cleaning the data, which includes dealing with missing values, correcting data types, and removing duplicates. Then, we perform exploratory data analysis to gain insights into customer behavior, sales trends, and product performance. For visualization, we use Tableau to create interactive dashboards that showcase our findings. Our analysis provides valuable insights into the company's sales patterns and helps identify areas for growth and improvement.
+
 ## [Disney+ Platform Analysis and Visualisation](6.%20Disney%2B%20Data%20Analysis)
 
 Used source cvs file with almost 1.5k row, cleaned and analysed via Tableau Desktop for
