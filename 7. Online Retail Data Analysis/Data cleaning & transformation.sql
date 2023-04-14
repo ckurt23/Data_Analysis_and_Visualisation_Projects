@@ -21,7 +21,8 @@ CREATE TABLE v2retail_sales AS
 SELECT *
 FROM retail_sales;
 
-					-- delete rows with empty cells
+					-- checked if there are duplicate rows
+					-- delete rows with empty cells, updated rows 800k, descreased from 1m total.
 DELETE FROM v2retail_sales
 WHERE
 	invoice is NULL OR
@@ -32,5 +33,8 @@ WHERE
 	price is NULL OR
 	customer_id is NULL OR
 	country is NULL;
+	
+					-- adjust date & time
+a
 
 -- to be continued.
