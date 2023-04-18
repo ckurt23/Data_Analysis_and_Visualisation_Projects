@@ -69,8 +69,8 @@ SELECT
 	date_trunc('month', new_invoice_date) AS month,
 	type,
 	SUM(price) AS total_revenue,
-	COUNT(CASE WHEN type = 'new' THEN customer_id END) AS new_customers,
-	COUNT(CASE WHEN type = 'returning' THEN customer_id END) AS returning_customers
+	COUNT(DISTINCT CASE WHEN type = 'new' THEN customer_id END) AS new_customers,
+	COUNT(DISTINCT CASE WHEN type = 'returning' THEN customer_id END) AS returning_customers
 FROM
 	v2retail_sales
 LEFT JOIN
