@@ -80,4 +80,4 @@ GROUP BY
 ORDER BY
 	month, type;
 	
---
+-- Can you identify any products that are frequently purchased together? How does the frequency of these co-occurring purchases change over time?
